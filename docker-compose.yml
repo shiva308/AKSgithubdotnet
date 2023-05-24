@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   acrhelloworld:
-    image: acrdemo2023232.azurecr.io/acrhelloworld:3.0
+    image: acrdemo2023232.azurecr.io/acrhelloworld:4.0
     build:
       context: .
       dockerfile: AcrHelloworld/Dockerfile
