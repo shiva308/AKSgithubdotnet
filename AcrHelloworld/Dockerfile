@@ -1,11 +1,11 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0 AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS base
 # Update <acrName> with the name of your registry
 # Example: uniqueregistryname.azurecr.io
 ENV DOCKER_REGISTRY acrdemo2023232.azurecr.io
 WORKDIR /app
 EXPOSE 80
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 WORKDIR /src
 COPY *.sln ./
 COPY AcrHelloworld/AcrHelloworld.csproj AcrHelloworld/
