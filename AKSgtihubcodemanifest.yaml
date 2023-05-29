@@ -16,7 +16,7 @@ spec:
       serviceAccountName: my-service-account
       containers:
         - name: my-app
-          image: acrdemo20231.azurecr.io/acrhelloworld:1.0
+          image: acrdemo20231.azurecr.io/acrhelloworld:2.0
           imagePullPolicy: Always
           ports:
             - containerPort: 80
